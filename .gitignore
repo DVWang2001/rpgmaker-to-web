@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist-pkg/
+.pytest_cache/
+.venv/
+venv/
+
+# Tool output / caches
+dist/
+.player-cache/
+*.trycloudflare.log

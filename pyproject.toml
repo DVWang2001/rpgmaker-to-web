@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rpgmaker-to-web"
+version = "0.1.0"
+description = "Turn an RPG Maker 2000/2003 game into a webpage you can play and share."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "DVWang2001", email = "86634689+DVWang2001@users.noreply.github.com" }]
+keywords = ["rpg-maker", "rpgmaker", "easyrpg", "wasm", "emscripten", "game", "web", "iframe"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+    "Topic :: Multimedia",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/DVWang2001/rpgmaker-to-web"
+
+[project.scripts]
+rpgmaker-to-web = "rpgmaker_to_web.cli:main"
+
+[tool.setuptools]
+packages = ["rpgmaker_to_web"]
